@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>InscriptionOracle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <h2>Ajouter un nouvel employé</h2>
+    <form action="InscriptionServlet" method="post">
+        
+        <label>ID Employé:</label><br>
+        <input type="number" name="id_employe" required><br>
+        
+        <label>Nom:</label><br>
+        <input type="text" name="nom" pattern="[A-Za-z\s]+" required><br>
+        
+        <label>Prénom:</label><br>
+        <input type="text" name="prenom" pattern="[A-Za-z\s]+" required><br>
+        
+        <label>Telephone:</label><br>
+        <input type="text" name="telephone" pattern="\d+" required><br><br>
+        
+        <input type="submit" value="Ajouter">
+        
+    </form>
+    </body>
+</html>
